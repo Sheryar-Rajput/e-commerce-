@@ -9,6 +9,11 @@ import {
   import SignUp from "../views/signUp"
   import About  from '../views/about'
   import ProductShoes from "../views/productShoes";
+  import AdminDashboard from "../admin/views/AdminDashboard";
+  import Order from "../admin/views/order";
+  import Customer from "../admin/views/Customer";
+  import AddProduct from "../admin/views/AddProduct";
+
   function Navigation() {
     return (
       <BrowserRouter>
@@ -19,6 +24,14 @@ import {
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/products" element={<ProductShoes />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/Customer" element={<Customer />} />
+          <Route path="/AddProduct" element={<AddProduct />} />
+
+
+
+          
 
         </Routes>
       </BrowserRouter>
